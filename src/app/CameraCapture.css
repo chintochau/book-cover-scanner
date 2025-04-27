@@ -1,0 +1,16 @@
+.capture-btn {
+  transition: transform 0.12s cubic-bezier(.4,2,.6,1), background 0.2s;
+}
+.capture-btn.capturing {
+  transform: scale(0.92);
+  background: #005bb5 !important;
+}
+
+@keyframes flash-fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
