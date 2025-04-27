@@ -34,6 +34,8 @@ const CameraCapture: React.FC<CameraCaptureProps> = ({ webhook }) => {
         }
       } catch (e) {
         // If environment-facing camera not found, try default camera
+        console.log(e);
+        
         try {
           const s = await navigator.mediaDevices.getUserMedia({ video: true });
           setStream(s);
